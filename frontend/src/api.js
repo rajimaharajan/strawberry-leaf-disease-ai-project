@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000';  // Flask backend port
+const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 export const healthCheck = async () => {
   const response = await fetch(`${API_BASE}/health`);
@@ -24,4 +24,3 @@ export const getHistory = async () => {
   if (!response.ok) throw new Error('Failed to get history');
   return response.json();
 };
-
