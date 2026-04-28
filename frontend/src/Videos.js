@@ -36,7 +36,7 @@ const VIDEOS = [
     id: 5,
     title: 'Strawberry Fertilizing Tips',
     description: 'Organic fertilizing schedule and tips for strawberries through the growing season.',
-    src: '/videos/Strawberry fertilizing tip. I fertilize my strawberries 3 times through the season. #organicgarden.mp4',
+    src: '/videos/strawberry-fertilizing-tip.mp4',
     tag: 'Fertilizing'
   }
 ];
