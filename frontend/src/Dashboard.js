@@ -5,6 +5,30 @@ import { predictImage, healthCheck } from './api.js';
 import { jsPDF } from "jspdf";
 import "./Dashboard.css";
 
+const REMEDIES = {
+  'Healthy': {
+    status: 'healthy',
+    message: 'Your plant is healthy! Keep up the good work.',
+    tips: ['Maintain regular watering schedule', 'Ensure proper sunlight (6-8 hours)', 'Monitor for early signs of disease'],
+    feeding: ['Early spring: NPK 10-10-10', 'Pre-bloom: Calcium-rich fertilizer', 'Post-harvest: Compost or well-rotted manure']
+  },
+  'Leaf Scorch': {
+    status: 'disease',
+    message: 'Leaf scorch detected. Immediate treatment recommended.',
+    remedies: ['Remove infected leaves immediately', 'Apply fungicide with copper-based compounds', 'Avoid overhead watering', 'Improve air circulation around plants', 'Use mulch to prevent soil splash'],
+    feeding: ['Reduce nitrogen until recovery', 'Apply potassium sulfate to strengthen leaves', 'Resume balanced NPK after 2 weeks']
+  },
+  'Powdery Mildew': {
+    status: 'disease',
+    message: 'Powdery mildew detected. Treat immediately.',
+    remedies: ['Apply sulfur-based fungicide', 'Remove severely infected plant parts', 'Increase air circulation', 'Avoid excessive nitrogen fertilization', 'Water at base of plant, not foliage'],
+    feeding: ['Hold off high-nitrogen feeds', 'Use seaweed extract spray weekly', 'Reintroduce balanced feed once mildew clears']
+  }
+};
+
+const MAX_MB = 5;
+const MAX_BYTES = MAX_MB * 1024 * 1024;
+
 export default function Dashboard() {
   const { logout } = useAuth();
   const navigate = useNavigate();
@@ -19,27 +43,6 @@ export default function Dashboard() {
   const [analyzing, setAnalyzing] = useState(false);
   const [backendStatus, setBackendStatus] = useState(null); // null = checking, true = ok, false = error
 
-  const REMEDIES = {
-    'Healthy': {
-      status: 'healthy',
-      message: 'Your plant is healthy! Keep up the good work.',
-      tips: ['Maintain regular watering schedule', 'Ensure proper sunlight (6-8 hours)', 'Monitor for early signs of disease'],
-      feeding: ['Early spring: NPK 10-10-10', 'Pre-bloom: Calcium-rich fertilizer', 'Post-harvest: Compost or well-rotted manure']
-    },
-    'Leaf Scorch': {
-      status: 'disease',
-      message: 'Leaf scorch detected. Immediate treatment recommended.',
-      remedies: ['Remove infected leaves immediately', 'Apply fungicide with copper-based compounds', 'Avoid overhead watering', 'Improve air circulation around plants', 'Use mulch to prevent soil splash'],
-      feeding: ['Reduce nitrogen until recovery', 'Apply potassium sulfate to strengthen leaves', 'Resume balanced NPK after 2 weeks']
-    },
-    'Powdery Mildew': {
-      status: 'disease', 
-      message: 'Powdery mildew detected. Treat immediately.',
-      remedies: ['Apply sulfur-based fungicide', 'Remove severely infected plant parts', 'Increase air circulation', 'Avoid excessive nitrogen fertilization', 'Water at base of plant, not foliage'],
-      feeding: ['Hold off high-nitrogen feeds', 'Use seaweed extract spray weekly', 'Reintroduce balanced feed once mildew clears']
-    }
-  };
-
   // Normalize class names from backend to frontend keys
   const normalizeClass = (cls) => {
     const map = {
@@ -52,9 +55,6 @@ export default function Dashboard() {
     };
     return map[cls] || cls;
   };
-
-  const MAX_MB = 5;
-  const MAX_BYTES = MAX_MB * 1024 * 1024;
 
   const setFeedbackMsg = useCallback((msg, isError = false) => {
     setFeedback(msg);
@@ -344,7 +344,7 @@ export default function Dashboard() {
         <div className="upload-section-main">
           <div className="columns">
             {/* Upload Card */}
-            <section ref={uploadAreaRef} className={`upload-area ${isDragOver ? 'dragover' : ''}`} id="uploadArea" tabIndex={0} aria-labelledby="uploadTitle" role="region">
+            <section ref={uploadAreaRef} className={`upload-area ${isDragOver ? 'dragover' : ''}`} id="uploadArea" tabIndex={0} aria-labelledby="uploadTitle">
               {/* File input: positioned absolute ONLY when no preview shown, otherwise hidden to avoid blocking buttons */}
               {!previewUrl && (
                 <input ref={fileInputRef} type="file" id="fileInput" className="upload-input" accept="image/jpeg,image/png,image/webp" aria-label="Upload strawberry plant photo (supports JPG, PNG, WEBP)" onChange={(e) => handleFiles(e.target.files)} />
