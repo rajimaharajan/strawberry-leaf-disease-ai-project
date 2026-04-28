@@ -1,6 +1,8 @@
+import os
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017/")
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/")
+client = MongoClient(MONGODB_URI)
 db = client["strawberryDB"]
 collection = db["predictions"]
 
