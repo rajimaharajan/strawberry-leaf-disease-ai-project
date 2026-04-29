@@ -1,4 +1,4 @@
-# Frontend-Backend Connection Fix TODO
+ # Frontend-Backend Connection Fix TODO
 
 ## Plan
 Fix the "Unable to Analyse" error when uploading images by connecting the React frontend to the Flask backend properly.

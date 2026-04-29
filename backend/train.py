@@ -8,7 +8,7 @@ import os
 import glob
 from model import ResNet9_SE
 
-# Class mapping: folder name -> class index
+
 CLASS_MAP = {
     "Strawberry___Leaf_scorch": 0,
     "Strawberry___healthy": 1,

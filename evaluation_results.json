@@ -1,0 +1,2273 @@
+{
+  "overall_accuracy": 96.9,
+  "overall_correct": 313,
+  "overall_total": 323,
+  "class_accuracy": {
+    "powdery_mildew": 42.86,
+    "Strawberry___healthy": 100.0,
+    "Strawberry___Leaf_scorch": 97.31
+  },
+  "predictions": [
+    {
+      "file": "powdery mildew leaf1.jpeg",
+      "true": "powdery_mildew",
+      "predicted": "powdery_mildew",
+      "confidence": 99.6,
+      "correct": true
+    },
+    {
+      "file": "powdery mildew leaf1_heatmap.jpeg",
+      "true": "powdery_mildew",
+      "predicted": "powdery_mildew",
+      "confidence": 81.26,
+      "correct": true
+    },
+    {
+      "file": "powdery mildew leaf2.webp",
+      "true": "powdery_mildew",
+      "predicted": "Strawberry___healthy",
+      "confidence": 59.59,
+      "correct": false
+    },
+    {
+      "file": "powdery mildew leaf3.jpg",
+      "true": "powdery_mildew",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 95.43,
+      "correct": false
+    },
+    {
+      "file": "powdery mildew leaf4.jpeg",
+      "true": "powdery_mildew",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 89.45,
+      "correct": false
+    },
+    {
+      "file": "powdery mildew leaf5.jpeg",
+      "true": "powdery_mildew",
+      "predicted": "powdery_mildew",
+      "confidence": 69.53,
+      "correct": true
+    },
+    {
+      "file": "powdery mildew leaf6.jpeg",
+      "true": "powdery_mildew",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 84.86,
+      "correct": false
+    },
+    {
+      "file": "0400adad-86e7-4e42-9141-acc0f226e2e7___RS_HL 2111.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.59,
+      "correct": true
+    },
+    {
+      "file": "04cb725a-632d-44e0-9886-c84e2bbdd3da___RS_HL 2094.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.41,
+      "correct": true
+    },
+    {
+      "file": "04cb725a-632d-44e0-9886-c84e2bbdd3da___RS_HL 2094_heatmap.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 46.31,
+      "correct": true
+    },
+    {
+      "file": "1245a96d-9a84-402d-9dde-da8c88bf7d74___RS_HL 4474.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.78,
+      "correct": true
+    },
+    {
+      "file": "1402ff6e-c678-4c37-b49b-b63374ac0557___RS_HL 1907.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "179cce8d-751b-454d-978f-dde2c84a1231___RS_HL 2060.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 63.39,
+      "correct": true
+    },
+    {
+      "file": "17a7354e-4d31-4b34-8efa-adc1a370b201___RS_HL 4692.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "1d92fcef-79d0-469b-b9b1-71a318505821___RS_HL 4487.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.67,
+      "correct": true
+    },
+    {
+      "file": "1e007f9a-6e90-4dd6-9be9-f0ce3775128f___RS_HL 2076.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.87,
+      "correct": true
+    },
+    {
+      "file": "23bce3ab-97d8-43a9-b38b-9e4e6fa57807___RS_HL 1829.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.77,
+      "correct": true
+    },
+    {
+      "file": "23d4fa2f-a966-44a3-a597-b39a79618378___RS_HL 1744.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "24de1e79-2489-4156-8197-72c4b46977bd___RS_HL 4802.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "29050f21-a393-473e-9f9c-7fd99feef9a7___RS_HL 4533.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "2a7a5c9d-1066-4af5-8560-30f53f9d5b33___RS_HL 4821.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "2acb16d1-598e-4ee1-9b54-eecfba7d4fc3___RS_HL 1754.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.8,
+      "correct": true
+    },
+    {
+      "file": "2dbd44d9-8c98-45ac-92a3-e6e65aac4dd5___RS_HL 4818.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.65,
+      "correct": true
+    },
+    {
+      "file": "2fbe071f-efd0-4a93-97b5-38160dafa0c5___RS_HL 2146.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.03,
+      "correct": true
+    },
+    {
+      "file": "33d585b6-736d-4767-9004-2444f4916fd9___RS_HL 4360.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "36a5809f-afaf-4c09-ab0c-023ce4fb2ba6___RS_HL 4592.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.12,
+      "correct": true
+    },
+    {
+      "file": "3aca733d-6d49-42d2-bcc2-fa288d126411___RS_HL 2223.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.83,
+      "correct": true
+    },
+    {
+      "file": "3b744062-8dff-416e-9349-3bae2aae5eaa___RS_HL 4345.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "3cffaab3-eb47-4ba7-8596-35445be017fc___RS_HL 2217.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.65,
+      "correct": true
+    },
+    {
+      "file": "411e3372-e40e-44ed-aa47-972afabd15f7___RS_HL 2225.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.81,
+      "correct": true
+    },
+    {
+      "file": "41dba974-b2b7-4e90-9c93-a8e29200f41c___RS_HL 1659.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.78,
+      "correct": true
+    },
+    {
+      "file": "4c3cc96f-e1d9-4237-b72d-2a1ea0a755f8___RS_HL 2167.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 93.63,
+      "correct": true
+    },
+    {
+      "file": "525ea4dd-84e2-4a43-9927-41cd69543db4___RS_HL 4457.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "5f5c41a6-8da9-4bd9-a4a3-67cdd6c9f300___RS_HL 1912.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.76,
+      "correct": true
+    },
+    {
+      "file": "60fba47d-a79f-4653-b6a4-1adeeb2603c0___RS_HL 1871.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.58,
+      "correct": true
+    },
+    {
+      "file": "640bb1de-c435-49a6-9784-30c1e0770a26___RS_HL 1685.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.81,
+      "correct": true
+    },
+    {
+      "file": "64939151-e6df-4236-8ba4-51ac9bcd7795___RS_HL 1811.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.04,
+      "correct": true
+    },
+    {
+      "file": "65880698-1582-43e9-86c4-3dfcea34ee8d___RS_HL 1654.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.66,
+      "correct": true
+    },
+    {
+      "file": "65b83aea-55da-4f73-a4bd-ee81843e436b___RS_HL 1651.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.62,
+      "correct": true
+    },
+    {
+      "file": "65ce255d-cc5b-43e3-b44a-5b65b8230e07___RS_HL 1784.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.68,
+      "correct": true
+    },
+    {
+      "file": "6b9a9dd2-74ed-4955-9ef5-68c0a5df09b2___RS_HL 2178.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.24,
+      "correct": true
+    },
+    {
+      "file": "6e3bbd66-5fb8-4cef-a84f-ac093bb96b1f___RS_HL 4856.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.68,
+      "correct": true
+    },
+    {
+      "file": "70c3ebc3-9917-4ed7-920b-e83719e6c414___RS_HL 1926.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 95.98,
+      "correct": true
+    },
+    {
+      "file": "734ec913-c493-4d86-bf32-d52f6e063218___RS_HL 4859.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "73cc96dc-59d4-4a43-91ed-8286de00beea___RS_HL 4593.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.85,
+      "correct": true
+    },
+    {
+      "file": "76966414-7ff1-4a03-b8a8-e4b7bd7ed106___RS_HL 2026.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.83,
+      "correct": true
+    },
+    {
+      "file": "786744bd-7252-4dec-b86a-b2ecfaa0b33f___RS_HL 4874.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.83,
+      "correct": true
+    },
+    {
+      "file": "78debbd4-43b4-437d-8fd8-86910b947d34___RS_HL 4459.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "7e02bc12-a026-4aff-88b1-78dcd0a97fa1___RS_HL 1889.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.72,
+      "correct": true
+    },
+    {
+      "file": "89e133b4-9f70-4711-a14e-2535ae3a00ee___RS_HL 4792.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "90ffc406-a0e7-4f94-98a9-3813e3ce6cc3___RS_HL 1898.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.88,
+      "correct": true
+    },
+    {
+      "file": "974f90d8-f19f-4174-8cfc-a1f658e322a5___RS_HL 4669.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "97af749a-c269-4ec5-92b1-6e7384dba46b___RS_HL 4344.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "98cd6b17-6eed-454c-9fa4-1fdd22370d99___RS_HL 4589.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 95.51,
+      "correct": true
+    },
+    {
+      "file": "9eca6d2b-a161-4a6c-9daa-6f875bb47de1___RS_HL 2231.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.21,
+      "correct": true
+    },
+    {
+      "file": "a386a7c2-9a92-4dd3-bffc-713d3a545b1f___RS_HL 1848.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "a41cf942-f28c-49a8-8c6f-090bed625de2___RS_HL 2219.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.44,
+      "correct": true
+    },
+    {
+      "file": "a48c8384-32d8-45d2-a734-7224569a40d3___RS_HL 1695.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.23,
+      "correct": true
+    },
+    {
+      "file": "a950850a-d4ac-4b69-ac73-60633aae3255___RS_HL 4683.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "aa47a5b4-789e-43ff-acd0-70bef9f8a365___RS_HL 4564.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "ac88dc9c-7333-4871-8e85-25279d2a552e___RS_HL 4388.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "b127a511-d0ce-4fdc-bbe6-6c2a2e2dcf1f___RS_HL 1816.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.32,
+      "correct": true
+    },
+    {
+      "file": "b5bafd06-def2-4fe9-9b04-05a49bfae9b3___RS_HL 4695.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.69,
+      "correct": true
+    },
+    {
+      "file": "b938a735-b7a3-463d-b5b9-3bfd7041fe51___RS_HL 1844.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.92,
+      "correct": true
+    },
+    {
+      "file": "bc26adda-8cdb-43cc-8485-4b2088e233ea___RS_HL 4866.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "bf79e7f8-5b1e-4acd-b4aa-7c023fb284e1___RS_HL 4699.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.82,
+      "correct": true
+    },
+    {
+      "file": "c1ccdd49-6389-40eb-b841-c77ab6568014___RS_HL 2056.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "c3d65977-d35a-4f0f-9e36-bf36f4dbdee8___RS_HL 2214.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.66,
+      "correct": true
+    },
+    {
+      "file": "caa6652b-d711-46cb-a216-70028258982f___RS_HL 1948.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.8,
+      "correct": true
+    },
+    {
+      "file": "cc31bcec-0229-4fe2-9a1f-7dbb10d70a1d___RS_HL 1620.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.75,
+      "correct": true
+    },
+    {
+      "file": "cd58ce68-c194-4171-aedb-2525d0c0d813___RS_HL 4612.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.82,
+      "correct": true
+    },
+    {
+      "file": "d069637f-101f-4e6a-84d3-5f646a6bbff7___RS_HL 2050.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 97.79,
+      "correct": true
+    },
+    {
+      "file": "d07e9834-ac76-4390-9463-cbef9d0269da___RS_HL 1736.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "d13a70dd-9812-4b62-a8f4-3764a50abda3___RS_HL 1796.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "d1aee44a-b6bb-45b9-b7b6-5d553add8fd1___RS_HL 2163.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "d1f8f26c-904b-4c19-8849-bc0d79b084de___RS_HL 2179.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.65,
+      "correct": true
+    },
+    {
+      "file": "d3da328c-a91f-4fcc-93fb-2c58baacdeeb___RS_HL 1741.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "d454c3f8-ca2e-4935-9c09-3b6a480ac097___RS_HL 1870.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.52,
+      "correct": true
+    },
+    {
+      "file": "d50fa8fa-015b-41f6-a2aa-18efcf041f6e___RS_HL 2188.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "d75e13ee-2b6a-4457-9a06-acf9fc07dfd9___RS_HL 4385.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "d840b66d-1a2d-40fb-8aab-a00836e7b9a2___RS_HL 4660.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.44,
+      "correct": true
+    },
+    {
+      "file": "d9c894d9-d2e8-412f-85fa-f0a416185931___RS_HL 4546.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "da93ba82-4070-4373-b818-a6fea8c91351___RS_HL 4724.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "daf99263-f38b-4aa6-ac5e-c82a10065773___RS_HL 1800.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "dc5b5a9e-c144-49d7-99ca-b53a818f83d8___RS_HL 4744.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "e178986b-223c-4da1-8c0f-2314de66df55___RS_HL 2042.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.72,
+      "correct": true
+    },
+    {
+      "file": "eba54644-386d-4358-88c7-ea6201fe630c___RS_HL 2165.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.27,
+      "correct": true
+    },
+    {
+      "file": "ee0f49c6-8884-4e96-8ebc-ceec0b9b69c4___RS_HL 1632.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.79,
+      "correct": true
+    },
+    {
+      "file": "efbbf9ee-e60d-4522-9711-f92ae6e7adea___RS_HL 4586.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "f058c607-09ac-4fe6-ad0f-c957d48bb0ed___RS_HL 4348.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "f36cfb30-4d03-46e2-8899-d372bf05212f___RS_HL 2112.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.2,
+      "correct": true
+    },
+    {
+      "file": "f3b01730-9365-4b94-a477-9b95d959ccd8___RS_HL 4555.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "f799141e-8ab5-4924-b54a-2b374d22798a___RS_HL 4604.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 98.0,
+      "correct": true
+    },
+    {
+      "file": "fa0ee358-6a10-49f4-900a-6d266ee7b648___RS_HL 2206.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.87,
+      "correct": true
+    },
+    {
+      "file": "fad0fc0b-4619-422e-8c59-d5bab6469af4___RS_HL 4737.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "fb1750de-1250-4bf5-806b-ff01ce24e40f___RS_HL 4354.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "fb8db167-dda8-4bda-99a5-d7b688b14e89___RS_HL 4442.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "fd530597-32df-4d80-bae0-4af7a8ebcb92___RS_HL 4771.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 94.43,
+      "correct": true
+    },
+    {
+      "file": "feea7aff-b70c-46dd-8ff4-be06e7920fa9___RS_HL 1807.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.42,
+      "correct": true
+    },
+    {
+      "file": "ff7ccace-1453-44e8-8580-3263c2952ea8___RS_HL 2006.JPG",
+      "true": "Strawberry___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 99.79,
+      "correct": true
+    },
+    {
+      "file": "01d11a79-f858-4e58-9b14-c3f0619af1f7___RS_L.Scorch 0090.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.1,
+      "correct": true
+    },
+    {
+      "file": "02cd135e-0ef2-45ec-b77d-a329b68cbea7___RS_L.Scorch 0080.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "02cd135e-0ef2-45ec-b77d-a329b68cbea7___RS_L.Scorch 0080_heatmap.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "powdery_mildew",
+      "confidence": 61.98,
+      "correct": false
+    },
+    {
+      "file": "02cef25f-9be8-4a12-8d95-50712589eead___RS_L.Scorch 1282.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "0361a9eb-143c-4ce2-b933-ee4a84524b27___RS_L.Scorch 1258.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "062b151a-8132-477d-afff-dad79f0fbdd6___RS_L.Scorch 9958.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "08a36568-798d-4e2e-a1a9-6341bee5d0e3___RS_L.Scorch 1494.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "08adf0a2-b86c-4c0c-b5b3-fcc7ac5447cb___RS_L.Scorch 1165.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.62,
+      "correct": true
+    },
+    {
+      "file": "0d02dec3-bad2-4dba-a2d5-480b6fdf3d7a___RS_L.Scorch 1157.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "0ed458ed-0207-4857-8453-dc3ed89e1bd4___RS_L.Scorch 0089.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 97.81,
+      "correct": true
+    },
+    {
+      "file": "13971547-97a9-4bc8-b843-93aa3247351d___RS_L.Scorch 0932.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "13d5364a-7ac5-4c5f-9cf1-23c64499a620___RS_L.Scorch 1342.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "13e6f9a3-0eff-4d81-a576-985cdc97872c___RS_L.Scorch 0165.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "151f5f35-cb9c-43f5-bb96-07d5086f9e87___RS_L.Scorch 1047.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "1672eb34-46ef-4987-a45b-7dd6e0d6a31d___RS_L.Scorch 0003.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.59,
+      "correct": true
+    },
+    {
+      "file": "180382a7-d391-458f-ad59-6005358334eb___RS_L.Scorch 0105.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "1a123c2f-bdb0-4b73-91ce-84284b211edd___RS_L.Scorch 1468.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "1d298911-900e-41ff-8595-b49b95a29436___RS_L.Scorch 1127.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "1d3d9fb0-9c00-4763-b023-8fa65f591940___RS_L.Scorch 1336.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.27,
+      "correct": true
+    },
+    {
+      "file": "1feb4725-61fc-4b23-b8b7-f53bad19a848___RS_L.Scorch 0086.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "212433a4-4bda-450e-8026-02ffa42f9f32___RS_L.Scorch 1551.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "2211762b-a98e-4756-b27a-027d084406e2___RS_L.Scorch 1248.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "2272d3ae-de6d-4fcd-af45-098cb2cd0fdf___RS_L.Scorch 1086.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "22ee5827-9800-4fb7-bd7b-2de68e7f3b89___RS_L.Scorch 0890.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 84.31,
+      "correct": true
+    },
+    {
+      "file": "231ee42e-ca7b-4c1f-9272-b963d445a966___RS_L.Scorch 9908.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "23af7051-346c-4eac-b8d0-9d22b6690842___RS_L.Scorch 0944.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "24b4756b-eea7-43b9-ace7-8f74e68b8c4f___RS_L.Scorch 0991.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.42,
+      "correct": true
+    },
+    {
+      "file": "276ce824-a892-46f0-a68c-9153c9109de5___RS_L.Scorch 1190.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 54.88,
+      "correct": true
+    },
+    {
+      "file": "2794f151-67b4-409c-a886-903a524b5345___RS_L.Scorch 0022.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "290609a6-2e60-46b3-986e-1af09ff21e57___RS_L.Scorch 0863.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "29c3d239-be01-4d55-81fa-37870bc305e9___RS_L.Scorch 0806.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "29e56679-80ca-4254-b95b-392645fd9b7f___RS_L.Scorch 0792.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "2a53bc48-fe00-441b-b8bb-45d632bc859a___RS_L.Scorch 0127.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "2a986b90-e7a3-4cc3-be5f-a11808071417___RS_L.Scorch 0942.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "2b6c0bc1-c844-440f-b145-89e85250307c___RS_L.Scorch 1180.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 92.29,
+      "correct": true
+    },
+    {
+      "file": "2e30632f-6f08-4fc7-8ade-536b651c0f01___RS_L.Scorch 1580.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "2f54dce1-5aa1-43fb-8eb4-8aeb18419440___RS_L.Scorch 0029.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "301e75f8-a15d-4b41-917a-934d04d6b0da___RS_L.Scorch 1593.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "313768fa-601a-47f5-a47d-9bb9c2d1b97e___RS_L.Scorch 1251.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.5,
+      "correct": true
+    },
+    {
+      "file": "35240d39-9516-4279-bc07-1d9fb39edcca___RS_L.Scorch 0814.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "35499a79-86db-4eff-9d4a-30d7edde74cb___RS_L.Scorch 0058.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "35f54a01-f19e-422c-bf6f-95a4b84bd6cf___RS_L.Scorch 1059.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "3672a5a1-a714-4807-9f94-89a772f943e8___RS_L.Scorch 1396.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "36bc7257-0b59-45a9-a692-1ff35b5a3425___RS_L.Scorch 1409.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.47,
+      "correct": true
+    },
+    {
+      "file": "377d90b2-9fa5-4c5e-9345-590d7c905750___RS_L.Scorch 1286.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "38cf78da-0e3d-47ee-9acd-8055452a4d7e___RS_L.Scorch 0975.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "3a5e8da8-0a36-40c8-8461-5715436b0047___RS_L.Scorch 1484.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.73,
+      "correct": true
+    },
+    {
+      "file": "3a6e5fc2-1b6a-4168-a126-d46e1ca0dcb0___RS_L.Scorch 1360.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "3cefe53f-b1ff-4d34-9ecb-825f260e720d___RS_L.Scorch 1436.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.28,
+      "correct": true
+    },
+    {
+      "file": "3f21964d-583e-4773-9922-8f1cbc8c0e02___RS_L.Scorch 1377.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.12,
+      "correct": true
+    },
+    {
+      "file": "41045bd3-e1b9-4f12-ae37-bc02ce949ea9___RS_L.Scorch 0173.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 98.27,
+      "correct": true
+    },
+    {
+      "file": "42eec63f-05db-4c68-9a0f-6b3baa8329fa___RS_L.Scorch 1195.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 75.97,
+      "correct": true
+    },
+    {
+      "file": "4434fd5c-8f45-40c4-9dfc-2e50a78c8a7b___RS_L.Scorch 0889.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 98.72,
+      "correct": true
+    },
+    {
+      "file": "469e16af-7eb7-4b8e-b596-b9817151f13d___RS_L.Scorch 1512.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "47a98502-4839-44cd-b855-fd4d3f9f1810___RS_L.Scorch 0120.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "4b03e1ad-335c-41d7-bff8-ee91ee97a164___RS_L.Scorch 1275.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.87,
+      "correct": true
+    },
+    {
+      "file": "4c817438-77b9-4b33-b272-6be7a49863de___RS_L.Scorch 1570.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "4ceb59e3-a16c-413e-965f-a148208bd495___RS_L.Scorch 0867.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "4d084e71-3d14-4bac-aedd-9d93de459a16___RS_L.Scorch 0046.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "4da9a515-440d-495b-8969-320b27b460be___RS_L.Scorch 1442.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 82.72,
+      "correct": true
+    },
+    {
+      "file": "4e407e24-e738-407c-9b4e-a77e99f85a32___RS_L.Scorch 9975.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "4e542cd2-5a31-4d86-88da-c40ebdc79b03___RS_L.Scorch 1013.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 93.35,
+      "correct": true
+    },
+    {
+      "file": "503e1d1c-8ac3-4984-829d-79be5050e383___RS_L.Scorch 1610.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.7,
+      "correct": true
+    },
+    {
+      "file": "508172b2-cb62-4d87-a88d-050fd2033f65___RS_L.Scorch 1582.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "50ef3cab-ca8a-4c59-854f-8b84e68f6da2___RS_L.Scorch 9909.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "5275bc15-41ca-481d-a3af-c347b861985a___RS_L.Scorch 1148.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "55c573e1-27ba-49d7-b56d-829dbe4c97d9___RS_L.Scorch 0157.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "57e2561b-caf9-4986-a7f1-4bbd5e4cde3b___RS_L.Scorch 0101.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "5891c20a-f582-4ff7-b6d0-c5ba94afac60___RS_L.Scorch 1428.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 51.29,
+      "correct": true
+    },
+    {
+      "file": "5ac8e2d9-f9f7-49b1-ad79-f05a60d3ebd2___RS_L.Scorch 1173.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.4,
+      "correct": true
+    },
+    {
+      "file": "5c52d886-ca5e-4e3c-82f9-6d4b7a1d2bc8___RS_L.Scorch 1212.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.44,
+      "correct": true
+    },
+    {
+      "file": "5c55f23a-1b75-460a-a0ea-7491dcb32eec___RS_L.Scorch 9983.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "5c79ec25-2ba6-44e6-b1ad-f0c6d5a875cb___RS_L.Scorch 0097.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "5ca7d8ee-eb8c-4e0a-933f-82a16c03c868___RS_L.Scorch 1240.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 95.89,
+      "correct": true
+    },
+    {
+      "file": "5d1b08e5-92d8-4d4d-9a1b-ba8b92fc1d9a___RS_L.Scorch 0826.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "5e4d4035-89da-4096-a74d-bc45770d80a4___RS_L.Scorch 0997.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "5f6ead43-4a36-4bd6-8ee6-75f405a40e67___RS_L.Scorch 0807.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "6007f5b7-bd62-429b-a1cb-dea633ad3590___RS_L.Scorch 9984.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "62114343-a924-445c-9a9a-9103fc797414___RS_L.Scorch 0116.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 98.11,
+      "correct": true
+    },
+    {
+      "file": "627c5058-c67f-4bb9-9cbb-7e3529e8178b___RS_L.Scorch 0034.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "62c2385e-8679-418e-8907-d0db613787db___RS_L.Scorch 0081.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "65e5f561-70cd-4282-98d6-9ecc667881e5___RS_L.Scorch 9951.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "665b7c37-0a43-473a-8ca2-19bdf7cbebb8___RS_L.Scorch 0847.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "6a6590c0-f929-4e31-b532-f9990c5db9fa___RS_L.Scorch 9902.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "6b5b0495-3fa5-4da0-894b-3a0ec775a0fd___RS_L.Scorch 1233.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "6ce00687-0995-42a8-b93e-3273b800aa15___RS_L.Scorch 0854.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "6e5e0267-fdff-4f09-acdb-ae08f56f4412___RS_L.Scorch 0822.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "70532a40-6da8-46f3-87c5-9b65fd03f034___RS_L.Scorch 1619.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.78,
+      "correct": true
+    },
+    {
+      "file": "70d2220e-f8b2-444f-8c75-12e49979d4c7___RS_L.Scorch 9980.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "71084f02-55a0-4b60-9ae9-2ea16df6bb93___RS_L.Scorch 0147.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "722ea125-c593-4079-bcbb-b7440cb89da9___RS_L.Scorch 1497.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "7435a709-e8cf-47df-a9a2-a6ec089d077f___RS_L.Scorch 1122.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "7614ff40-fd01-4c7c-929f-f74814c5de74___RS_L.Scorch 1448.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 75.72,
+      "correct": true
+    },
+    {
+      "file": "78f0cfb0-e3c5-4359-9d97-0aaf9620f510___RS_L.Scorch 1504.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "79c2506c-98e7-4e81-8daa-cc30fcc19436___RS_L.Scorch 9925.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "79d1eb82-6017-447a-b43f-3c477c26bd42___RS_L.Scorch 9995.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.46,
+      "correct": true
+    },
+    {
+      "file": "7c2952f9-1801-4c11-9269-720b99d54d5a___RS_L.Scorch 0842.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___healthy",
+      "confidence": 72.3,
+      "correct": false
+    },
+    {
+      "file": "7cf5daf3-540a-4451-bbad-3721d2290c1c___RS_L.Scorch 0830.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.43,
+      "correct": true
+    },
+    {
+      "file": "7d2fb39a-6558-471c-9d9c-4c2e388b3e2f___RS_L.Scorch 1129.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "7d3c63ed-92ad-4809-b5d2-42d9adb94504___RS_L.Scorch 0893.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.18,
+      "correct": true
+    },
+    {
+      "file": "7ed6d819-67a3-47e9-a896-6c7898839b5d___RS_L.Scorch 1011.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 98.98,
+      "correct": true
+    },
+    {
+      "file": "82651f35-7b0e-4d7e-b277-055d2311332a___RS_L.Scorch 0091.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "82e24bb0-1131-4411-a024-bfcaba541a4f___RS_L.Scorch 1440.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 93.36,
+      "correct": true
+    },
+    {
+      "file": "83178057-79d0-46ab-ad87-858829d76aa2___RS_L.Scorch 0006.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "8390e1a5-7962-4523-a31e-e4928c2e17bc___RS_L.Scorch 0877.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "83c52095-d426-4f63-835f-215547a65ea0___RS_L.Scorch 9926.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "83e20a92-f787-4862-8a69-bd88d157513a___RS_L.Scorch 9898.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "83fe881f-22b2-422d-970f-c43f0c7bfcad___RS_L.Scorch 1541.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "84655bff-19e3-4433-9cd6-d7f330dd7083___RS_L.Scorch 1425.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 91.6,
+      "correct": true
+    },
+    {
+      "file": "84b41aa3-4e4f-42a7-890b-db2892047331___RS_L.Scorch 1562.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "8521b2b5-d5fa-42fe-ad72-d0f5c94b3ca8___RS_L.Scorch 9940.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "85af5363-5c38-448f-8bd1-977c282d31e9___RS_L.Scorch 1400.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "8708d212-acf5-4771-82ee-73a34549f4e0___RS_L.Scorch 0011.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 96.67,
+      "correct": true
+    },
+    {
+      "file": "87483aae-1c8c-47fc-af2d-512336395b2f___RS_L.Scorch 9967.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "894e45ce-3e1d-4064-bdd3-409966f1bfbd___RS_L.Scorch 1479.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 86.0,
+      "correct": true
+    },
+    {
+      "file": "8af1ca11-3d9e-4ed7-99c4-ff906f04f634___RS_L.Scorch 0853.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "8c787d8d-2cf5-462b-8695-cb881f9e59fe___RS_L.Scorch 1007.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "8e471027-aaa7-4a8a-aba0-217ca766f297___RS_L.Scorch 0084.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "8edcded5-b3d4-468c-a86d-a2dd81534a4c___RS_L.Scorch 1457.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 94.77,
+      "correct": true
+    },
+    {
+      "file": "8f7f9c9f-37b9-45e0-9292-c6b69bdfb494___RS_L.Scorch 1575.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "8ff7a1e6-f68f-4f06-a84c-f83e9ba12af7___RS_L.Scorch 1607.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "91f549dd-815c-436d-840e-30ef630b0ce3___RS_L.Scorch 1073.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "925f7c20-9861-451c-a6fb-b165fc4b4aae___RS_L.Scorch 0802.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "94d2c1fc-f862-456f-a7be-f09c27147f12___RS_L.Scorch 0031.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "94f6ed8a-9bd1-4d29-b862-d195209d29d2___RS_L.Scorch 0027.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "9504a4b2-ef82-4153-8522-d9070ef78359___RS_L.Scorch 0935.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.92,
+      "correct": true
+    },
+    {
+      "file": "968c98c8-d748-4b1c-ab29-fc68f250da46___RS_L.Scorch 0024.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "96ce9244-9788-4dfd-9a2d-4b1107e9537f___RS_L.Scorch 1057.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "97178ff7-cfbe-4436-af6d-b7a2c693f895___RS_L.Scorch 0047.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "97bcae7e-cee8-4537-aad3-2732e6f1ad88___RS_L.Scorch 1302.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.83,
+      "correct": true
+    },
+    {
+      "file": "98ddf858-e4f2-4a85-a98c-c1143d4c7394___RS_L.Scorch 9970.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "9a32a6bd-4745-4926-b3b4-bcf244cb155e___RS_L.Scorch 0094.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "9ab653fe-889e-4f4a-a48b-c8d9a339fdf1___RS_L.Scorch 9956.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "9e846d22-58de-43af-97b3-b52eec137369___RS_L.Scorch 1230.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "9fe7fda1-ecda-4803-abd6-8eb1b281cff2___RS_L.Scorch 1358.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "a1e269d3-9f90-4395-86fe-422c9c8e612e___RS_L.Scorch 9974.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "a34c4018-c690-4e5f-8e3a-385be622f9d4___RS_L.Scorch 1060.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___healthy",
+      "confidence": 84.06,
+      "correct": false
+    },
+    {
+      "file": "a45656fb-2251-4748-be24-527e4fb37c6f___RS_L.Scorch 0927.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.21,
+      "correct": true
+    },
+    {
+      "file": "a479bc72-8214-4b97-b9bd-60a9228762cf___RS_L.Scorch 1225.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "a4b70461-267f-4806-9e18-405e62f80bdb___RS_L.Scorch 1340.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "a7b26211-f6c0-404c-be55-5360b2c7c121___RS_L.Scorch 1128.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "aa5dab5c-46b9-40ad-bd23-375b96cbdfa0___RS_L.Scorch 1044.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "aa6f0946-8281-41d0-b5c7-778fe456ff1f___RS_L.Scorch 1046.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.89,
+      "correct": true
+    },
+    {
+      "file": "aaf9718f-2f9a-4211-ae46-42b8640ce626___RS_L.Scorch 0793.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.88,
+      "correct": true
+    },
+    {
+      "file": "ac4b1e38-b895-480c-bdf8-334d16f7b866___RS_L.Scorch 1595.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "ac7bb639-98a6-4c24-bbfe-af98bf814849___RS_L.Scorch 9972.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.82,
+      "correct": true
+    },
+    {
+      "file": "ad08e822-1ff0-48e9-9ff3-cc8d0b53fc70___RS_L.Scorch 1288.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.65,
+      "correct": true
+    },
+    {
+      "file": "b02ec56b-cce6-4e02-b2c1-736279aba430___RS_L.Scorch 0875.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "b15e2e55-cc14-4e0c-9755-423ee47c3836___RS_L.Scorch 1051.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "b1ead01a-3f1c-4f9c-a91e-0ddaa45112a4___RS_L.Scorch 0783.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "b39b1fbc-038c-4bc8-8154-3c6ea168af62___RS_L.Scorch 9905.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.85,
+      "correct": true
+    },
+    {
+      "file": "b3eb2228-f38e-4472-a39e-3e39917bac3d___RS_L.Scorch 9982.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.94,
+      "correct": true
+    },
+    {
+      "file": "b4087a7d-dc29-482f-9be0-ccb61e885577___RS_L.Scorch 1412.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.75,
+      "correct": true
+    },
+    {
+      "file": "b4cd90ef-d3db-4680-9871-f7978b31d093___RS_L.Scorch 1052.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "b4f9293b-406b-4be2-8273-5329faac034c___RS_L.Scorch 0923.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___healthy",
+      "confidence": 70.73,
+      "correct": false
+    },
+    {
+      "file": "b6d298a7-40a5-4994-a430-190bda35abb4___RS_L.Scorch 9989.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.5,
+      "correct": true
+    },
+    {
+      "file": "b979675e-97d9-4934-b116-7f0006a48b3a___RS_L.Scorch 1252.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.38,
+      "correct": true
+    },
+    {
+      "file": "ba6ac501-62e7-46ec-ad02-1b21e00ca850___RS_L.Scorch 0929.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "bbf5cb98-385e-42b0-b3c1-1762ab684daa___RS_L.Scorch 1034.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.65,
+      "correct": true
+    },
+    {
+      "file": "bcccdd25-1271-4d6e-b80a-e2af8f487fb5___RS_L.Scorch 1535.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "bcf52398-58a1-414e-afd7-ba7b0e26d66e___RS_L.Scorch 1110.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "bd1837c6-5386-4a16-9939-d36b45cedf21___RS_L.Scorch 0881.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 78.78,
+      "correct": true
+    },
+    {
+      "file": "bd89b21e-7f53-490d-94ab-0eb54a79c465___RS_L.Scorch 1206.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.69,
+      "correct": true
+    },
+    {
+      "file": "be1eef3e-171b-401a-8e56-f2004a43a22f___RS_L.Scorch 0033.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "be504902-70ea-46c7-ae17-a56057d572d5___RS_L.Scorch 1480.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 77.86,
+      "correct": true
+    },
+    {
+      "file": "bf6d0b94-c850-473c-8725-fddf57f19ac5___RS_L.Scorch 1142.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "c16c072d-4a26-4184-8844-ec6eeac1bd5a___RS_L.Scorch 1319.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "c1b9718b-6326-4e72-91fd-1e53ce6095bd___RS_L.Scorch 1136.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "c37c8b9a-81f2-4f49-8f57-0fb275845a5f___RS_L.Scorch 1501.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "c49a9bd6-53fe-4ee1-b1df-71e5b02838f8___RS_L.Scorch 1314.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.14,
+      "correct": true
+    },
+    {
+      "file": "c50d2ba0-216b-4389-a828-13d03cd08263___RS_L.Scorch 1260.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "c6920663-efcc-433d-a429-d6ac89f686e9___RS_L.Scorch 1050.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.36,
+      "correct": true
+    },
+    {
+      "file": "c76aba29-28a3-43d4-949f-ea8b75f9c8f3___RS_L.Scorch 0087.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "c7da2f97-d7de-4518-be0a-7ebcb1f448f3___RS_L.Scorch 1284.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "c91262ad-e350-4e63-9073-2c0816b38213___RS_L.Scorch 0134.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "c991a0d6-1866-46c2-9746-42497c0c22ad___RS_L.Scorch 1366.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "cb7d8aec-9b86-4778-a62a-9544051b1eae___RS_L.Scorch 1021.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "ce4da8b3-1764-48f6-adbc-ee1cf266d34c___RS_L.Scorch 0056.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "ce8fc718-8129-4da7-8b13-c65f173d2f9d___RS_L.Scorch 1002.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "ceb2c11a-034c-4651-ba12-d6919abe0078___RS_L.Scorch 0966.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "d75b11d5-4be2-4543-a2cf-11d1aed9755b___RS_L.Scorch 0999.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.69,
+      "correct": true
+    },
+    {
+      "file": "d8fd4132-a60c-4ed4-ab45-f6091aad8085___RS_L.Scorch 0962.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "d9f64df2-e244-4580-a643-f2cebc13c034___RS_L.Scorch 0874.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.89,
+      "correct": true
+    },
+    {
+      "file": "dfc76404-a47b-412e-8e88-f4ad933203ec___RS_L.Scorch 1301.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "e32af66d-5145-4b2c-8fb9-246fcca3a299___RS_L.Scorch 1154.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.93,
+      "correct": true
+    },
+    {
+      "file": "e35b3fba-967b-45dd-b9cd-db6c066c772c___RS_L.Scorch 0005.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.32,
+      "correct": true
+    },
+    {
+      "file": "e3c66dbd-4e68-46c0-881e-4fe95d6767a0___RS_L.Scorch 0151.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 92.14,
+      "correct": true
+    },
+    {
+      "file": "e4a821c6-7c21-4876-b484-a25738e92c7e___RS_L.Scorch 9942.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.95,
+      "correct": true
+    },
+    {
+      "file": "e51a5883-8774-419f-b155-c8c42dc4a93c___RS_L.Scorch 0825.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.98,
+      "correct": true
+    },
+    {
+      "file": "e609db4a-77b0-4f0d-9a36-74b63fa785ab___RS_L.Scorch 1589.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "e6a58ef4-f85e-4a73-a5f9-b1ba93d98fd1___RS_L.Scorch 1035.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.88,
+      "correct": true
+    },
+    {
+      "file": "e6a59827-6b18-4470-835b-e1052b284007___RS_L.Scorch 0035.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "e6cdee5b-7c34-483f-9a61-1bb9917d3586___RS_L.Scorch 1365.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.91,
+      "correct": true
+    },
+    {
+      "file": "e7dd48a7-2892-4dfc-925f-1e014c239439___RS_L.Scorch 0894.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.41,
+      "correct": true
+    },
+    {
+      "file": "e80d81f2-f9b6-480c-959e-9a169d42acd0___RS_L.Scorch 1160.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 52.32,
+      "correct": true
+    },
+    {
+      "file": "e84ee8ed-5a7b-46e7-ae90-5b9571d789dc___RS_L.Scorch 9981.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "e9bf9c32-460b-483d-967c-51e43c9f91ae___RS_L.Scorch 0838.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.96,
+      "correct": true
+    },
+    {
+      "file": "eb6be37a-0fbd-4150-a8f1-abcec9da58a4___RS_L.Scorch 1460.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___healthy",
+      "confidence": 81.92,
+      "correct": false
+    },
+    {
+      "file": "ec420b87-6622-4477-aae7-bc87166e7aa0___RS_L.Scorch 1089.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "ece29d2d-f1ab-47f2-9adf-4fcbdfc4d90f___RS_L.Scorch 1019.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 98.09,
+      "correct": true
+    },
+    {
+      "file": "ecf07471-8d4d-4902-a270-9f88e8651c4d___RS_L.Scorch 1545.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "edf78517-a51f-4315-af31-9fa1e6913f47___RS_L.Scorch 0827.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "ee921a9c-1761-4859-85ad-c400e6a6fd7e___RS_L.Scorch 1609.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.74,
+      "correct": true
+    },
+    {
+      "file": "ef1d40a9-1df2-4e0d-b82a-95626f1fc476___RS_L.Scorch 1049.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.86,
+      "correct": true
+    },
+    {
+      "file": "ef952b0f-08f9-4165-aed3-574182e3f050___RS_L.Scorch 0980.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "efc56ba5-70a8-4317-ab0f-e23994abeb7c___RS_L.Scorch 1530.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f0606fe2-72f3-4dda-9f21-05152daea27d___RS_L.Scorch 0886.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 87.34,
+      "correct": true
+    },
+    {
+      "file": "f0afdb9e-9af4-4c0a-b1b0-67db12985d3d___RS_L.Scorch 1498.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "f10b17bb-4841-4c98-9557-27d866eed36a___RS_L.Scorch 0109.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f1c2c618-1be3-4fa3-b3ed-b88ca37f3ade___RS_L.Scorch 1516.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f3b3e84e-41c7-443c-9202-54b9002ae06a___RS_L.Scorch 1429.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___healthy",
+      "confidence": 63.17,
+      "correct": false
+    },
+    {
+      "file": "f3e99f65-fec8-45af-a2c0-196ad7188d70___RS_L.Scorch 1272.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.58,
+      "correct": true
+    },
+    {
+      "file": "f4bda0d5-a89c-4b9d-ad26-3881767ba735___RS_L.Scorch 0860.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "f56f16d2-9ed0-4cbf-9518-2e64091141cb___RS_L.Scorch 1508.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    },
+    {
+      "file": "f6b3a819-04dd-41d8-9cac-042f857d009a___RS_L.Scorch 0791.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f7d50599-f99b-4b36-ada8-712428030a2e___RS_L.Scorch 0945.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f7fbc156-4bc0-4156-9294-3d288abe6dbf___RS_L.Scorch 0805.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "f8c43823-8efa-4f97-8e37-8ab7e0115fd0___RS_L.Scorch 1604.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "fb630f86-9955-4cbe-8199-3d056993b38a___RS_L.Scorch 0823.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "fba85f23-a979-4464-966f-09c3911ca9f3___RS_L.Scorch 1223.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.97,
+      "correct": true
+    },
+    {
+      "file": "fdbd115d-4709-42eb-90ce-278a33fc3e7e___RS_L.Scorch 0079.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 100.0,
+      "correct": true
+    },
+    {
+      "file": "fdedf2e3-5378-4470-a5cb-d282022cdc22___RS_L.Scorch 1209.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.89,
+      "correct": true
+    },
+    {
+      "file": "ff7c7db9-f3d9-4b75-8e86-5631595e2cb8___RS_L.Scorch 0125.JPG",
+      "true": "Strawberry___Leaf_scorch",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 99.99,
+      "correct": true
+    }
+  ]
+}

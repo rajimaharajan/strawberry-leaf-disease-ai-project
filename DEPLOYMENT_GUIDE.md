@@ -32,7 +32,7 @@
    - **Region**: Choose closest to you
    - **Branch**: `main` (or your default branch)
    - **Root Directory**: `backend`
-   - **Build Command**: `pip install -r requirements.txt`
+   - **Build Command**: `pip install -r requirements.txt --no-cache-dir`
    - **Start Command**: `gunicorn app:app`
 5. Add **Environment Variables**:
    | Key | Value |
@@ -121,7 +121,9 @@ The frontend will use `http://localhost:5000` (from `.env`) automatically.
 | CORS errors | Add your Netlify URL to `CORS(app, origins=[...])` |
 | MongoDB timeout | Check `MONGODB_URI` has correct password and IP whitelist `0.0.0.0/0` |
 | Frontend shows blank page | Check browser console for API errors; verify `REACT_APP_API_URL` |
-| Render cold start | Free tier sleeps after 15 min; first request wakes it up (~30-60s) |
+| Render cold start | Free tier sleeps after 15 min; first request wakes it up (~30-60s). PyTorch model load adds ~10-20s |
+| Torch/PyTorch install fails | requirements.txt now uses CPU index. Set Build Command to `pip install -r requirements.txt --no-cache-dir` |
+| `Model not loaded` on Render | Upload `model_best.pth` to repo root or add download to Build Command: `pip install -r requirements.txt --no-cache-dir && [your model download command]` |
 
 ---
 
