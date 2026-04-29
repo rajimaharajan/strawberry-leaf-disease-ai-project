@@ -14,10 +14,11 @@ from db import collection
 from model import build_model, ResNet9_SE
 
 BASE_DIR = Path(__file__).resolve().parent.parent  # project root
-BUILD_DIR = BASE_DIR / "frontend" / "build"
 
-app = Flask(__name__, static_folder=str(BUILD_DIR / "static" ), static_url_path='/static')
+app = Flask(__name__)
 CORS(app)  # Enable CORS for all domains on all routes
+
+DISABLE_TRAINING = os.environ.get('PORT') != '5000'
 
 # ========== LOAD PYTORCH MODEL ==========
 # ImageFolder sorts class names alphabetically:
@@ -266,6 +267,8 @@ def health():
 
 @app.route("/train", methods=["POST"])
 def start_training():
+    if DISABLE_TRAINING:
+        return jsonify({"error": "Training disabled in production."}), 503
     if training_status["is_training"]:
         return jsonify({"error": "Training already in progress"}), 409
 
@@ -289,18 +292,7 @@ def get_training_status():
     return jsonify(training_status)
 
 
-# ========== SERVE REACT FRONTEND ==========
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def serve_react(path):
-    """Serve React app for all non-API routes."""
-    if path.startswith('predict') or path.startswith('history') or path.startswith('health') or path.startswith('train'):
-        return jsonify({"error": "Not found"}), 404
-    file_path = BUILD_DIR / path
-    if file_path.exists() and file_path.is_file():
-        return send_from_directory(BUILD_DIR, path)
-    return send_from_directory(BUILD_DIR, 'index.html')
-
+# Frontend served separately by Netlify (pure API backend)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

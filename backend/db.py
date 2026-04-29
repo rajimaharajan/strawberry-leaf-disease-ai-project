@@ -1,8 +1,9 @@
 import os
-from pymongo import MongoClient
+from motor.motor_asyncio import AsyncIOMotorClient
+from backend.core.config import settings
 
-MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/")
-client = MongoClient(MONGODB_URI)
-db = client["strawberryDB"]
-collection = db["predictions"]
+client = AsyncIOMotorClient(settings.mongodb_uri)
+db = client.strawberryDB
+users_collection = db.users
+predictions_collection = db.predictions
 

@@ -54,3 +54,13 @@ frontend/build/
 .DS_Store
 Thumbs.db
 
+# Heavy files/directories for deployment
+dataset/
+heatmaps/
+uploads/
+frontend/*.mp4
+frontend/build/
+__pycache__/
+*.pyc
+.DS_Store
+

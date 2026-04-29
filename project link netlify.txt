@@ -4,6 +4,10 @@ https://agent-69f0aab4c1b6db8eceb--strawberry-leaf-guard.netlify.app
 # Deployment Setup TODO
 
 
-https://app.netlify.com/sites
 
-https://dashboard.render.com/web
+
+
+https://lucent-gecko-5df26f.netlify.app/
+
+UvJovSG5A3tmELKE - mongopass
+rajimaharajan31bit27_db_user
