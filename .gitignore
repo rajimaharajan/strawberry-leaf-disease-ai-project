@@ -39,9 +39,9 @@ yarn-error.log*
 # React build
 frontend/build/
 
-# Model files (large binaries — use Git LFS or external storage)
-*.pth
-*.pkl
+# Model files (COMMITTED for deployment)
+# *.pth
+# *.pkl
 
 # IDEs
 .vscode/

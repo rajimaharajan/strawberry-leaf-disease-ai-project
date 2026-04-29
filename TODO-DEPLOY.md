@@ -1,29 +1,54 @@
-# Deployment Setup TODO
+# Backend Deployment Tracker — Render + MongoDB Atlas
 
-## Plan: Netlify (Frontend) + Render (Backend) + MongoDB Atlas
+Repo: https://github.com/rajimaharajan/strawberry-leaf-disease-ai-project
 
-### Step 1: Environment-Variable-ize the Codebase
-- [x] `frontend/src/api.js` — Use `REACT_APP_API_URL` env var
-- [x] `backend/db.py` — Use `MONGODB_URI` env var
-- [x] `backend/app.py` — Use `PORT` env var, dynamic CORS origins
-- [x] `backend/requirements.txt` — Add `gunicorn`
+## Steps [Pending ☐ / Complete ✓]
 
-### Step 2: Create Deployment Config Files
-- [x] `frontend/.env` — Local dev API URL
-- [x] `frontend/.env.production` — Production API URL template
-- [x] `frontend/netlify.toml` — SPA redirect rules
-- [x] `backend/Procfile` — Render start command
-- [x] `backend/runtime.txt` — Ensure Python version is set
-- [x] `.gitignore` — Ignore env files and large binaries
+### 1. Fix .gitignore for model_best.pth [PENDING]
+```
+edit_file .gitignore "*.pth" "# *.pth"
+git add model_best.pth .gitignore
+git commit -m \"Add model_best.pth for deployment\"
+git push
+```
 
-### Step 3: Create Deployment Guide
-- [x] `DEPLOYMENT_GUIDE.md` — Step-by-step manual deployment instructions
+### 2. Deploy Backend to Render [PENDING]
+```
+1. render.com → New → Web Service → Connect GitHub repo
+2. Root Directory: backend
+3. Build: pip install -r requirements.txt --no-cache-dir
+4. Start: gunicorn app:app
+5. Env Vars:
+   MONGODB_URI=your_atlas_uri
+   MODEL_ARCH=resnet9_se
+```
+Expected URL: https://your-app.onrender.com
 
-### Step 4: User Action Required (Manual Deployment)
-- [ ] Sign up for MongoDB Atlas → get `MONGODB_URI`
-- [ ] Sign up for Render → deploy backend with env vars
-- [ ] Update `frontend/.env.production` with real Render URL
-- [ ] Sign up for Netlify → deploy frontend with `REACT_APP_API_URL`
-- [ ] Verify frontend builds locally with `npm run build`
-- [ ] Verify backend runs with `gunicorn`
+### 3. MongoDB Atlas Setup [PENDING]
+```
+1. cloud.mongodb.com → New Cluster (M0 Free)
+2. Database User: strawberry / [password]
+3. Network: 0.0.0.0/0
+4. Get URI: mongodb+srv://strawberry:[pwd]@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
+```
+
+### 4. Update Frontend Netlify [PENDING]
+```
+Netlify → Site Settings → Environment → REACT_APP_API_URL = https://your-render.onrender.com
+→ Redeploy
+```
+
+### 5. Test End-to-End [PENDING]
+```
+curl [render-url]/health
+Netlify → Upload image → Analyze → Check MongoDB Atlas collection
+```
+
+### 6. CORS Update (if needed) [PENDING]
+```
+CORS(app, origins=[\"https://your-netlify.netlify.app\"])
+git push → Render redeploys
+```
+
+**Next: Step 1 → User provides Netlify URL + Atlas URI → Deploy!**
 
