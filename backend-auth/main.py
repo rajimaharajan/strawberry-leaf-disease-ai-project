@@ -2,7 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from routers.auth import router as auth_router
-from db import users_collection
+# from db import users_collection
+
 from typing import List
 
 app = FastAPI(title="StrawberryGuard Auth", version="1.0.0")

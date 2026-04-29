@@ -1,2 +1,2 @@
-db = None
+users_collection = None
 
