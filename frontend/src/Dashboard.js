@@ -236,12 +236,13 @@ export default function Dashboard() {
     }
   }, [feedback]);
 
-  // Check backend health on mount
+// Check backend health on mount
   useEffect(() => {
     const checkHealth = async () => {
       try {
         const data = await healthCheck();
-        if (data.status === 'ok' && data.model_status === 'loaded') {
+        // MERN server is running, which proxies to Python ML service
+        if (data.status === 'ok') {
           setBackendStatus(true);
         } else {
           setBackendStatus(false);
@@ -323,10 +324,10 @@ export default function Dashboard() {
 
       </div>
 
-      {/* ---------------- BACKEND STATUS BANNER ---------------- */}
+{/* ---------------- BACKEND STATUS BANNER ---------------- */}
       {backendStatus === false && (
         <div className="backend-status-banner error">
-          ⚠️ Backend disconnected or model not loaded. Please ensure the Flask server is running on port 5000.
+          ⚠️ Backend disconnected. Please ensure MERN server is running on port 3000 and Python ML service on port 5000.
         </div>
       )}
       {backendStatus === true && (

@@ -2,15 +2,16 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { login as apiLogin } from './api';
 import './LoginPage.css';
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
-    role: '',
-    phoneNumber: '',
     email: '',
     password: ''
   });
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,16 +24,25 @@ const LoginPage = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.role || !formData.phoneNumber || !formData.password) {
-      alert('Please fill role, phone, and password');
+    setError('');
+    
+    if (!formData.email || !formData.password) {
+      setError('Please fill email and password');
       return;
     }
-    const token = btoa(JSON.stringify({ role: formData.role, phone: formData.phoneNumber, sub: Date.now() }));
-    login(token);
-    // Production: Remove console.log
-    navigate('/dashboard');
+
+    setLoading(true);
+    try {
+      const data = await apiLogin(formData.email, formData.password);
+      login(data.token);
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.message || 'Login failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -62,48 +72,14 @@ const LoginPage = () => {
         <h1 className="app-title">StrawberryGuard</h1>
         <p className="app-subtitle">Disease Detection & Management</p>
 
-        {/* Login Form */}
+{/* Login Form */}
         <form onSubmit={handleSubmit} className="login-form">
-          {/* Role Select */}
-          <div className="form-group">
-            <label className="form-label">
-              <svg className="label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-              Login as
-            </label>
-            <select
-              name="role"
-              value={formData.role}
-              onChange={handleChange}
-              className="form-input form-select"
-            >
-              <option value="">Select your role</option>
-              <option value="farmer">Farmer</option>
-              <option value="agronomist">Agronomist</option>
-              <option value="researcher">Researcher</option>
-              <option value="admin">Admin</option>
-            </select>
-          </div>
-
-          {/* Phone Number */}
-          <div className="form-group">
-            <label className="form-label">
-              <svg className="label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              placeholder="+91 00000 00000"
-              className="form-input"
-            />
-          </div>
+          {/* Error Message */}
+          {error && (
+            <div className="error-message" style={{ color: '#c94b4b', marginBottom: '15px', textAlign: 'center' }}>
+              {error}
+            </div>
+          )}
 
           {/* Email */}
           <div className="form-group">
@@ -113,7 +89,6 @@ const LoginPage = () => {
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
               Email
-              <span className="optional-text">(optional)</span>
             </label>
             <input
               type="email"
@@ -122,6 +97,7 @@ const LoginPage = () => {
               onChange={handleChange}
               placeholder="your@email.com"
               className="form-input"
+              required
             />
           </div>
 
@@ -141,12 +117,13 @@ const LoginPage = () => {
               onChange={handleChange}
               placeholder="Enter your password"
               className="form-input"
+              required
             />
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="login-button">
-            Login to Dashboard
+          <button type="submit" className="login-button" disabled={loading}>
+            {loading ? 'Logging in...' : 'Login to Dashboard'}
           </button>
         </form>
 
