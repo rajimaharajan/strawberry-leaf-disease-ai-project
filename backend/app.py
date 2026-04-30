@@ -6,25 +6,12 @@ import torch
 import torch.nn.functional as F
 from torchvision import transforms
 import os
-import threading
 from datetime import datetime
 from pathlib import Path
 
-
 from model import build_model, ResNet9_SE
 
-<<<<<<< HEAD
-BASE_DIR = Path(__file__).resolve().parent.parent  # project root
 
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all domains on all routes
-
-DISABLE_TRAINING = os.environ.get('PORT') != '5000'
-
-# ========== LOAD PYTORCH MODEL ==========
-# ImageFolder sorts class names alphabetically:
-# 0: Strawberry___Leaf_scorch, 1: Strawberry___healthy, 2: powdery_mildew
-=======
 # ==============================
 # APP SETUP
 # ==============================
@@ -34,9 +21,15 @@ CORS(app)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ==============================
+# IN-MEMORY STORAGE (Simple)
+# ==============================
+# Simple in-memory list for storing predictions
+predictions_storage = []
+
+
+# ==============================
 # MODEL CONFIG
 # ==============================
->>>>>>> f6beff1610c54fcc2b6e3c4fb1c3c20002869f46
 PYTORCH_CLASSES = [
     "Strawberry___Leaf_scorch",
     "Strawberry___healthy",
@@ -93,7 +86,8 @@ def preprocess_image(pil_image):
 def health():
     return jsonify({
         "status": "ok",
-        "model_loaded": model_loaded
+        "model_loaded": model_loaded,
+        "classes": PYTORCH_CLASSES
     })
 
 
@@ -119,15 +113,12 @@ def predict():
         result = PYTORCH_CLASSES[predicted.item()]
         confidence_value = confidence.item() * 100
 
-        # Save to DB
-        try:
-            collection.insert_one({
-                "prediction": result,
-                "confidence": confidence_value,
-                "time": str(datetime.now())
-            })
-        except Exception as e:
-            print(f"[DB ERROR]: {e}")
+        # Save to in-memory storage
+        predictions_storage.append({
+            "prediction": result,
+            "confidence": confidence_value,
+            "time": str(datetime.now())
+        })
 
         return jsonify({
             "prediction": result,
@@ -141,61 +132,14 @@ def predict():
 @app.route("/history", methods=["GET"])
 def history():
     try:
-        data = list(collection.find({}, {"_id": 0}))
-        return jsonify(data)
+        return jsonify(predictions_storage)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 
-<<<<<<< HEAD
-@app.route("/health", methods=["GET"])
-def health():
-    model_status = "loaded" if model_loaded else "not_loaded"
-    return jsonify({
-        "status": "ok",
-        "model_status": model_status,
-        "classes": PYTORCH_CLASSES
-    })
-
-
-@app.route("/train", methods=["POST"])
-def start_training():
-    if DISABLE_TRAINING:
-        return jsonify({"error": "Training disabled in production."}), 503
-    if training_status["is_training"]:
-        return jsonify({"error": "Training already in progress"}), 409
-
-    data = request.get_json(silent=True) or {}
-    epochs = data.get("epochs", 5)
-    epochs = min(max(epochs, 1), 20)  # Clamp between 1-20
-
-    thread = threading.Thread(target=run_training_async, args=(epochs,))
-    thread.daemon = True
-    thread.start()
-
-    return jsonify({
-        "message": "Training started",
-        "epochs": epochs,
-        "status": training_status
-    })
-
-
-@app.route("/train-status", methods=["GET"])
-def get_training_status():
-    return jsonify(training_status)
-
-
-# Frontend served separately by Netlify (pure API backend)
-
+# ==============================
+# RUN APP
+# ==============================
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
-
-=======
-# ==============================
-# RUN APP (RENDER FIX)
-# ==============================
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
->>>>>>> f6beff1610c54fcc2b6e3c4fb1c3c20002869f46
+    app.run(host="0.0.0.0", port=port, debug=False)
