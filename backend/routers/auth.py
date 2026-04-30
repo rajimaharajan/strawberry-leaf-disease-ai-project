@@ -1,7 +1,8 @@
+from datetime import timedelta
 from fastapi import APIRouter, HTTPException, Depends, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from backend.models.user import UserCreate, UserLogin, Token
-from backend.core.security import verify_password, create_access_token
+from backend.core.security import verify_password, create_access_token, get_password_hash
 from backend.core.config import settings
 from backend.db import users_collection
 from typing import List
